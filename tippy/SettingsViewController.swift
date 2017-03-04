@@ -14,8 +14,6 @@ class SettingsViewController: UIViewController {
     var tipPercentageArray : [Int] = [1,2,3]
     var previousViewController : ViewController?
     
-    @IBOutlet weak var percentage1: UITextField!
-    
     
     @IBOutlet var percentage: UITextField!
     @IBOutlet var percentage2: UITextField!

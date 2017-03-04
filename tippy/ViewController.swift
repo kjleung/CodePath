@@ -15,11 +15,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipLabel: UILabel!
     
+    @IBOutlet var totalArea: UIView!
     var tipPercentageArray : [Int] = [18, 20, 25]
+    var defaults : UserDefaults = UserDefaults.standard
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (defaults.object(forKey: "BillAmt") == nil) {
+            defaults.set(0.0, forKey: "BillAmt")
+            defaults.synchronize()
+        } else {
+            let billAmt = defaults.object(forKey: "BillAmt") as! Double
+            billField.text  = String(format:"%.2f", billAmt)
+        }
+        
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -58,6 +72,11 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format:"$%.2f", tip)
         totalLabel.text =  String(format:"$%.2f", total)
+        totalArea.backgroundColor = UIColor(hue: 0.6722, saturation: 0.25, brightness: 0.88, alpha: 1.0)
+        UIView.animate(withDuration: 1.0, animations: {
+                self.totalArea.backgroundColor = UIColor(hue: 0.2056, saturation: 0.15, brightness: 0.84, alpha: 1.0)
+        })
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

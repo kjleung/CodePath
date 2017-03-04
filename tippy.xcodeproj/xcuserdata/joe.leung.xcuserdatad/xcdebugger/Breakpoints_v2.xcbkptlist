@@ -10,60 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tippy/ViewController.swift"
-            timestampString = "510253536.227008"
+            timestampString = "510282914.446102"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tippy.ViewController.tipPercentageArray.setter : Swift.Array&lt;Swift.Int&gt;"
-                  moduleName = "tippy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joe.leung/Documents/Google%20Drive/codepath/tippy/tippy/ViewController.swift"
-                  timestampString = "510192367.261245"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "65">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tippy.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; tippy.ViewController"
-                  moduleName = "tippy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joe.leung/Documents/Google%20Drive/codepath/tippy/tippy/ViewController.swift"
-                  timestampString = "510192367.263027"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "338">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tippy.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;tippy.ViewController&gt;"
-                  moduleName = "tippy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joe.leung/Documents/Google%20Drive/codepath/tippy/tippy/ViewController.swift"
-                  timestampString = "510192367.264455"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "235">
-               </Location>
-            </Locations>
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -73,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tippy/ViewController.swift"
-            timestampString = "510259115.087185"
+            timestampString = "510277526.379405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "prepare(for:sender:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

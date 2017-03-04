@@ -12,10 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var startTime: Int?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        startTime = Int(NSDate().timeIntervalSince1970)
         return true
     }
 
@@ -27,6 +29,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        //let topController = UIApplication.shared.delegate?.window??.rootViewController?.presentedViewController as! ViewController
+        
+        let navigationController = window?.rootViewController as? UINavigationController
+        let firstVC = navigationController?.viewControllers[0] as? ViewController
+        
+        let endTime = Int(NSDate().timeIntervalSince1970)
+        let timeLapsed = endTime - startTime!
+        
+        print(String(format:"%d", timeLapsed))
+        
+        let defaults : UserDefaults = UserDefaults.standard
+        if (timeLapsed < 10*60*60) {
+            defaults.set(Double((firstVC?.billField.text)!) ?? 0.0, forKey: "BillAmt")
+        } else {
+            defaults.set(0.0, forKey: "BillAmt")
+        }
+        defaults.synchronize()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -40,7 +60,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 
