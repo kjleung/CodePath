@@ -2,9 +2,9 @@
 
 Tippy is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: Joe Leung
 
-Time spent: 4 hours spent in total
+Time spent: 6.5 hours spent in total
 
 ## User Stories
 
@@ -37,7 +37,7 @@ Optional in Swift is a bit foreign to me.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [Joe Leung]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
